@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript Messages</title>
+
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+	<div id="box1" class="square" onmouseover="rollover1()"></div>
+	<div id="box2" class="square" onmouseover="rollover2()"></div>
+
+	<div id="big"></div>
+
+	<script>
+		function rollover1(){
+			console.log("rollover 1");
+			document.getElementById("big").style.height="300px";
+			document.getElementById("big").style.backgroundImage="url('img/wolf.gif')";
+		}
+		function rollover2(){
+			console.log("rollover 2");
+			document.getElementById("big").style.height="225px";
+			document.getElementById("big").style.backgroundImage="url('img/wolf2.gif')";
+		}
+	</script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

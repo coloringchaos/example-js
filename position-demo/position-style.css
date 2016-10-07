@@ -1,0 +1,86 @@
+body{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	color:rgb(2, 17, 41);
+	font-family: 'Montserrat', sans-serif;
+}
+h1{
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: .01em;
+	margin:0 0 2em;
+	text-align: center;
+}
+h4{
+	font-family: sans-serif;
+	letter-spacing: .1em;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top:1em;
+}
+hr{
+	margin:3em 0 5em;
+}
+p{
+	font-family: 'Lora', serif;
+	line-height: 1.4em;
+	font-size: .9em;
+}
+.wrapper{
+	width:70%;
+	margin:0 auto;
+	padding: 4em 0;
+	background-color:lightgray;
+}
+.description{
+	text-align: center;
+	padding:0 2em;
+}
+.position{
+	border: solid black 3px;
+	width:270px;
+	height:190px;
+	margin: 0 auto 2em;
+	/* a is used for transparency - values 0-1*/
+	background-color: rgba(114, 208, 204, 1);
+}
+
+
+/* 
+an element is positioned
+relative to it's NORMAL position
+*/
+.relative{
+	position:relative;
+	top:20px;
+	left:100px;
+}
+
+/* element is positioned 
+fixed to the BROWSER WINDOW -
+it is REMOVED from normal 
+document flow*/
+.fixed{
+	position:fixed;
+	top:0;
+	right:0;
+	/* z-index does not use units */
+	z-index: 5;
+}
+
+/* element is positioned relative
+to it's parent element */
+.absolute{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index: -5;
+}
+
+
+
+
+
+
+
+

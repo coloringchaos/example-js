@@ -1,0 +1,17 @@
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.fadeIn{
+    animation: fadeIn 4s forwards;
+}
+
+hr{
+	margin:2em 0;
+}
