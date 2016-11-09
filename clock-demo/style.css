@@ -1,0 +1,108 @@
+body {
+    background-color: whitesmoke;
+    color: hsl(0, 0%, 13%);
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    margin-top: 5%;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+#meridiem {
+    font-size: .25em;
+}
+
+.date {
+    display: inline-block;
+    font-size: 1.5em;
+    color: crimson;
+}
+
+span {
+    margin: 0;
+    padding: 0;
+}
+
+/* ANALOG CLOCK BELOW THIS LINE */
+
+.clock {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border: solid 5px white;
+    overflow-x: hidden;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.hHand {
+    width: 10px;
+    background-color: white;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 10px;
+    /*make sure we rotate from the bottom of the div*/
+    transform-origin: bottom;
+    /*offset to the center. 100 - (height of self/2) */
+    transform: translateY(40px) rotate(0deg);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 95px;
+}
+
+.mHand {
+    width: 5px;
+    background-color: white;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 5px;
+    /*make sure we rotate from the bottom of the div*/
+    transform-origin: bottom;
+    /*offset to the center. 100 - (height of self/2) */
+    transform: translateY(20px) rotate(0deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 97.5px;
+}
+
+.sHand {
+    width: 3px;
+    background-color: red;
+    height: 90px;
+    margin: 0 auto;
+    border-radius: 3px;
+    /*make sure we rotate from the bottom of the div*/
+    transform-origin: bottom;
+    /*offset to the center. 100 - (height of self/2) */
+    transform: translateY(10px) rotate(0deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 98.5px;
+}
+
+.cap {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    margin: 0 auto;
+    background-color: white;
+    left: 92px;
+    top: 92px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px black;
+}
